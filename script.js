@@ -28,6 +28,9 @@ function markWhatsAppDone() {
     
     // Guardar estado
     localStorage.setItem('whatsappDone', 'true');
+    
+    // Mensaje de confirmación
+    showNotification('✓ WhatsApp verificado. Ahora puedes seguir a YouTube');
 }
 
 /**
@@ -55,12 +58,48 @@ function markYoutubeDone() {
     
     // Guardar estado
     localStorage.setItem('youtubeDone', 'true');
+    
+    // Mensaje de confirmación
+    showNotification('✓ YouTube verificado. Ahora puedes generar tu KEY');
+}
+
+/**
+ * Muestra una notificación al usuario
+ */
+function showNotification(message) {
+    const notification = document.createElement('div');
+    notification.className = 'notification';
+    notification.textContent = message;
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+        notification.classList.add('show');
+    }, 10);
+    
+    setTimeout(() => {
+        notification.classList.remove('show');
+        setTimeout(() => {
+            notification.remove();
+        }, 300);
+    }, 3000);
 }
 
 /**
  * Inicia el countdown de 60 segundos
  */
 function startCountdown() {
+    // Verificar que WhatsApp esté completado
+    if (!whatsappDone) {
+        showNotification('❌ Debes seguir el canal de WhatsApp primero');
+        return;
+    }
+    
+    // Verificar que YouTube esté completado
+    if (!youtubeDone) {
+        showNotification('❌ Debes suscribirte a YouTube primero');
+        return;
+    }
+    
     if (countdownActive) return;
     
     countdownActive = true;
@@ -182,16 +221,16 @@ function resetForm() {
 window.addEventListener('DOMContentLoaded', function() {
     // Verificar si WhatsApp fue completado
     if (localStorage.getItem('whatsappDone') === 'true') {
+        whatsappDone = true;
         markWhatsAppDone();
+    } else {
+        // Paso 1 siempre activo inicialmente si no se completó
+        document.getElementById('step1').classList.add('active');
     }
     
     // Verificar si YouTube fue completado
     if (localStorage.getItem('youtubeDone') === 'true') {
+        youtubeDone = true;
         markYoutubeDone();
-    }
-    
-    // Paso 1 siempre activo inicialmente
-    if (!whatsappDone) {
-        document.getElementById('step1').classList.add('active');
     }
 });
