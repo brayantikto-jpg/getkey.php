@@ -101,11 +101,7 @@ Botón para seguir en WhatsApp:
 
 ```
 [ GENERADOR CRISS PING OFC ]
-[✓] CONECTADO
-[✓] OPERATIVO
-[✓] EN LÍNEA
-[ SYS: ONLINE | CPU: 100% | NET: ACTIVE ]
-```
+[HAZ LOS PASOS CORRECTAMENTE BY CRISS MODZ]
 
 ---
 
