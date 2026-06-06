@@ -1,6 +1,6 @@
-# 🔑 GetKey - Cyberpunk Key Generator
+# 🔑 GENERAFOR DE KEYS CRISS PING 🩸👑
 
-## 🚀 Generador de Keys - Tema Cyberpunk Futurista
+## 🚀 Generador de Keys - Criss Modz Official 🩸👑
 
 Generador de keys único con formato `CRISS-MODZ-XXXXXXXX` para tu aplicación Android.
 
