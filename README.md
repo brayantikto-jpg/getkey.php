@@ -81,7 +81,7 @@ getkey/
 ### 🚀 GitHub Pages
 
 Esta página está publicada en GitHub Pages:
-**https://brayantikto-jpg.github.io/getkey/**
+**https://CrissModzOfficial.github.io/getkey/**
 
 ### 🛠️ Características del Generador
 
@@ -100,7 +100,7 @@ Botón para seguir en WhatsApp:
 ### 📋 Terminal Status
 
 ```
-[ GENERADOR_V2.0 ]
+[ GENERADOR CRISS PING OFFICIAL ]
 [✓] CONECTADO
 [✓] OPERATIVO
 [✓] EN LÍNEA
