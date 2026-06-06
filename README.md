@@ -81,7 +81,7 @@ getkey/
 ### 🚀 GitHub Pages
 
 Esta página está publicada en GitHub Pages:
-**https://crissmodzofficial.github.io/getkey/**
+**https://crissmodzofficial.github.io/getkey.php/**
 
 ### 🛠️ Características del Generador
 
